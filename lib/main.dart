@@ -4,7 +4,7 @@ import 'package:study_abroad_info/bottom_nav_controller.dart';
 void main() {
   runApp(const MyApp());
 }
- 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

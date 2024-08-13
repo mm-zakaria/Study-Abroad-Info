@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:study_abroad_info/usa_university/harvard_university.dart';
+
+import 'package:study_abroad_info/widgets/country.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -20,19 +23,45 @@ class Homepage extends StatelessWidget {
                 "welcome",
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
               ),
-              SizedBox(
-                height: 10,
-              ),
               Padding(
-                padding: const EdgeInsets.only(left: 5, right: 20),
-                child: TextField(
-                  decoration: InputDecoration(
-                    suffix: Icon(Icons.search),
-                    hintText: "search your dream country",
-                    hintTextDirection: TextDirection.ltr,
+                padding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                child: Container(
+                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 25),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFE6DAC9),
+                  ),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "search your dream country",
+                      border: InputBorder.none,
+                      prefixIcon: Icon(Icons.search),
+                    ),
                   ),
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HarvardUniversity()));
+                },
+                child: country('assets/uu.jpeg'),
+              ),
+
+              SizedBox(
+                height: 10,
+              ),
+              country('assets/sic.jpeg'),
+              SizedBox(
+                height: 10,
+              ),
+
+              // country('assets/usa.jpg'),
             ],
           ),
         ),
