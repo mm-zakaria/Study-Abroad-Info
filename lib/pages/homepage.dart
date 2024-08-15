@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_abroad_info/canada_university/canada_university_list.dart';
 import 'package:study_abroad_info/uk_university/university_list.dart';
 
 import 'package:study_abroad_info/widgets/country.dart';
@@ -56,7 +57,16 @@ class Homepage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              country('assets/sic.jpeg'),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => CanadaUniversityList()));
+                },
+                child: country('assets/sic.jpeg'),
+              ),
+
               SizedBox(
                 height: 10,
               ),
