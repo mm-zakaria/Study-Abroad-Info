@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:study_abroad_info/usa_university/harvard_university.dart';
+import 'package:study_abroad_info/uk_university/university_list.dart';
 
 import 'package:study_abroad_info/widgets/country.dart';
 
@@ -48,7 +48,7 @@ class Homepage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const HarvardUniversity()));
+                          builder: (context) => UniversityList()));
                 },
                 child: country('assets/uu.jpeg'),
               ),

@@ -5,7 +5,7 @@ Widget country(String image) {
     height: 175,
     width: 378,
     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(15),
+      borderRadius: BorderRadius.circular(10),
       color: Colors.pink,
       image: DecorationImage(
         image: AssetImage(image),
