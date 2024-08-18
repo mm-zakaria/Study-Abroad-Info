@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_abroad_info/widgets/country_widgets.dart';
 
 class CanadaUniversityList extends StatelessWidget {
   const CanadaUniversityList({super.key});
@@ -21,18 +22,7 @@ class CanadaUniversityList extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           children: [
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
-            uniList,
+            CountryWidgets(),
           ],
         ),
       ),

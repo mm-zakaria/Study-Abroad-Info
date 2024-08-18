@@ -3,6 +3,7 @@ import 'package:study_abroad_info/canada_university/canada_university_list.dart'
 import 'package:study_abroad_info/uk_university/university_list.dart';
 
 import 'package:study_abroad_info/widgets/country.dart';
+import 'package:study_abroad_info/widgets/country_widgets.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -41,9 +42,7 @@ class Homepage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 20,
-              ),
+
               GestureDetector(
                 onTap: () {
                   Navigator.push(
@@ -57,6 +56,7 @@ class Homepage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
+
               GestureDetector(
                 onTap: () {
                   Navigator.push(
@@ -67,9 +67,9 @@ class Homepage extends StatelessWidget {
                 child: country('assets/sic.jpeg'),
               ),
 
-              SizedBox(
-                height: 10,
-              ),
+              // SizedBox(
+              //   height: 10,
+              // ),
 
               // country('assets/usa.jpg'),
             ],

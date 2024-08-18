@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_abroad_info/widgets/country_widgets.dart';
 
 class UniversityList extends StatelessWidget {
   final List<String> _cityName = [
@@ -12,11 +13,6 @@ class UniversityList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var university = Container(
-      height: 50,
-      width: 100,
-      color: Colors.red,
-    );
     return Scaffold(
       appBar: AppBar(
         title: const Text('Universities'),
@@ -49,9 +45,6 @@ class UniversityList extends StatelessWidget {
                     ),
                   );
                 }),
-          ),
-          Expanded(
-            child: ListView(prototypeItem: university),
           ),
         ],
       ),
