@@ -51,3 +51,20 @@ class UsauniversityList extends StatelessWidget {
     );
   }
 }
+  // SizedBox(
+  //           height: 50,
+  //           child: Column(
+  //             children: [
+  //               Padding(
+  //                 padding: EdgeInsets.only(top: 10, bottom: 20),
+  //                 child: Card(
+  //                   elevation: 5,
+  //                   child: ListTile(
+  //                     leading: CircleAvatar(),
+  //                     title: Text("Harvard University"),
+  //                   ),
+  //                 ),
+  //               ),
+  //             ],
+  //           ),
+  //         ),

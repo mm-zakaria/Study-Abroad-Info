@@ -46,6 +46,20 @@ class UniversityList extends StatelessWidget {
                   );
                 }),
           ),
+          SizedBox(
+            height: 70,
+            child: Expanded(
+              child: ListView(
+                children: [
+                  Column(
+                    children: [
+                      CountryWidgets(),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
