@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:study_abroad_info/pages/new_homepage.dart';
 import 'package:study_abroad_info/pages/profile.dart';
-import 'package:study_abroad_info/pages/save.dart';
+import 'package:study_abroad_info/pages/pprofile.dart';
 
 class BottomNavController extends StatefulWidget {
   const BottomNavController({super.key});
@@ -15,8 +15,8 @@ class _BottomNavControllerState extends State<BottomNavController> {
   int _currentIndex = 0;
   final _pages = [
     NewHomepage(),
+    Pprofile(),
     Profile(),
-    Save(),
   ];
 
   @override

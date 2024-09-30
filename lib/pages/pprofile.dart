@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Save extends StatelessWidget {
-  const Save({super.key});
+class Pprofile extends StatelessWidget {
+  const Pprofile({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text("save page")),
+      body: Center(child: Text("hello")),
     );
   }
 }
