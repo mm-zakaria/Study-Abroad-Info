@@ -8,13 +8,13 @@ class AustraliaUniversityList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text('australia'),
+        title: Text('Australia University List...'),
       ),
       body: ListView(
         children: [
           Column(
             children: [
-              for (int i = 0; i <= 20; i++)
+             // for (int i = 0; i <= 20; i++)
                 Padding(
                   padding: EdgeInsets.all(5),
                   child: InkWell(
@@ -25,14 +25,244 @@ class AustraliaUniversityList extends StatelessWidget {
                       //         builder: (context) => UsauniversityList()));
                     },
                     child: Card(
-                      color: Colors.white24,
+                      color: Colors.white10,
                       elevation: 5,
                       child: ListTile(
                         leading: CircleAvatar(
-                          backgroundImage: AssetImage("assets/logo2.jpg"),
+                          backgroundImage: AssetImage("assets/melbone.png"),
                         ),
-                        title: Text("NWU"),
-                        trailing: Text("KDA Avenue, khulna"),
+                        title: Text("University of \n Melbourne"),
+                        trailing: Text("Parkville, Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of \n Sydney"),
+                        trailing: Text("Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/unnn.png"),
+                        ),
+                        title: Text("The University of New South Wales"),
+                        trailing: Text("Kensington, Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/unsw.png"),
+                        ),
+                        title: Text("Australian National University"),
+                        trailing: Text("Acton Campus, Canberra Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of Sydney"),
+                        trailing: Text("Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of Sydney"),
+                        trailing: Text("Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of Sydney"),
+                        trailing: Text("Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of Sydney"),
+                        trailing: Text("Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of Sydney"),
+                        trailing: Text("Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of Sydney"),
+                        trailing: Text("Sydney Australia"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("The University of Sydney"),
+                        trailing: Text("Sydney Australia"),
                       ),
                     ),
                   ),
