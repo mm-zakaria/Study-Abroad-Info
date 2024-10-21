@@ -1,70 +1,276 @@
 import 'package:flutter/material.dart';
 
 class UsauniversityList extends StatelessWidget {
-  final List<String> _cityName = [
-    'All',
-    'New York',
-    'Los Angeles',
-    'Chicago',
-    'Washington',
-    'Jacksonville',
-  ];
-  UsauniversityList({super.key});
+  const UsauniversityList({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Universities'),
+        backgroundColor: Colors.blueGrey,
+        title: Text('USA University List'),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          SizedBox(
-            height: 25,
-            child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: _cityName.length,
-                itemBuilder: (_, index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(right: 10),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Center(
-                          child: Text(
-                            _cityName[index],
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w500),
-                          ),
+          Column(
+            children: [
+             // for (int i = 0; i <= 20; i++)
+                Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/mit.png"),
                         ),
+                        title: Text("MIT"),
+                        trailing: Text("Cambridge, United States"),
                       ),
                     ),
-                  );
-                }),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/harvert.png"),
+                        ),
+                        title: Text("Harvard University"),
+                        trailing: Text("Cambridge, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/stan.png"),
+                        ),
+                        title: Text("Stanford University"),
+                        trailing: Text("Stanford, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/unsw.png"),
+                        ),
+                        title: Text("Cornell University"),
+                        trailing: Text("Ithaca, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("University of Chicago"),
+                        trailing: Text("Chicago, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("Princeton University"),
+                        trailing: Text("Princeton, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("Yale University"),
+                        trailing: Text("New Haven, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("Johns Hopkins University"),
+                        trailing: Text("Baltimore, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("Columbia University"),
+                        trailing: Text("New York City, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white60,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("New York University"),
+                        trailing: Text("New York City, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+
+                 Padding(
+                  padding: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => UsauniversityList()));
+                    },
+                    child: Card(
+                      color: Colors.white10,
+                      elevation: 5,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage("assets/sydney.jpg"),
+                        ),
+                        title: Text("Northwestern University"),
+                        trailing: Text("Evanston, United States"),
+                      ),
+                    ),
+                  ),
+                ),
+            ],
           ),
         ],
       ),
     );
   }
 }
-  // SizedBox(
-  //           height: 50,
-  //           child: Column(
-  //             children: [
-  //               Padding(
-  //                 padding: EdgeInsets.only(top: 10, bottom: 20),
-  //                 child: Card(
-  //                   elevation: 5,
-  //                   child: ListTile(
-  //                     leading: CircleAvatar(),
-  //                     title: Text("Harvard University"),
-  //                   ),
-  //                 ),
-  //               ),
-  //             ],
-  //           ),
-  //         ),
