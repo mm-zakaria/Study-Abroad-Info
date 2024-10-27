@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class UsauniversityList extends StatelessWidget {
   const UsauniversityList({super.key});
@@ -19,6 +20,8 @@ class UsauniversityList extends StatelessWidget {
                   padding: EdgeInsets.all(5),
                   child: InkWell(
                     onTap: () {
+
+                      _launchUrl();
                       // Navigator.push(
                       //     context,
                       //     MaterialPageRoute(
@@ -272,5 +275,23 @@ class UsauniversityList extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+final Uri _url = Uri.parse('https://www.mit.edu/');
+
+
+Future<void> _launchUrl() async {
+  if (!await launchUrl(_url , mode: LaunchMode.inAppWebView)) {
+    throw Exception('Could not launch $_url');
   }
 }
