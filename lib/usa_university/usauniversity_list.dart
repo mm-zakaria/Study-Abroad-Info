@@ -45,6 +45,7 @@ class UsauniversityList extends StatelessWidget {
                   padding: EdgeInsets.all(5),
                   child: InkWell(
                     onTap: () {
+                      _harvart();
                       // Navigator.push(
                       //     context,
                       //     MaterialPageRoute(
@@ -68,6 +69,8 @@ class UsauniversityList extends StatelessWidget {
                   padding: EdgeInsets.all(5),
                   child: InkWell(
                     onTap: () {
+
+                      _stanford();
                       // Navigator.push(
                       //     context,
                       //     MaterialPageRoute(
@@ -286,12 +289,39 @@ class UsauniversityList extends StatelessWidget {
 
 
 
+//For MIT University
+
 
 final Uri _url = Uri.parse('https://www.mit.edu/');
+
 
 
 Future<void> _launchUrl() async {
   if (!await launchUrl(_url , mode: LaunchMode.inAppWebView)) {
     throw Exception('Could not launch $_url');
+  }
+}
+
+
+//For Harvart University
+
+
+final Uri _har = Uri.parse('https://www.harvard.edu/');
+
+
+Future<void> _harvart() async {
+  if (!await launchUrl(_har , mode: LaunchMode.inAppWebView)) {
+    throw Exception('Could not launch $_har');
+  }
+}
+
+
+//For Stanford University
+
+final Uri _stn = Uri.parse('https://www.stanford.edu/');
+
+Future<void> _stanford() async {
+  if (!await launchUrl(_stn , mode: LaunchMode.inAppWebView)) {
+    throw Exception('Could not launch $_stn');
   }
 }

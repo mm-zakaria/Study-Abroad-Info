@@ -14,6 +14,8 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: 40.0,
               ),
+
+              //for circle picture
               CircleAvatar(
                 radius: 80,
                 backgroundImage: AssetImage("assets/boy.jpeg"),
@@ -21,6 +23,10 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: 40.0,
               ),
+              //containter for design
+
+
+
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -34,6 +40,8 @@ class Profile extends StatelessWidget {
                     ),
                   ],
                 ),
+                //listtile for list type data
+                
                 child: ListTile(
                   title: Text("Name"),
                   subtitle: Text("M M ZAKARIA"),
